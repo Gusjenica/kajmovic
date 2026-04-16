@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAJMOVIC</title>
+    <link rel="stylesheet" href="../src/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="tool wrench"></div>
+            <div class="tool key"></div>
+            <div class="tool screwdriver"></div>
+            <div class="tool hammer"></div>
+            <div class="tool pliers"></div>
+            <div class="tool oil-can"></div>
+            <div class="tool tire-iron"></div>
+            <div class="tool spark-plug"></div>
+        </div>
+        <p data-translate="loading">Loading...</p>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" style="display: none;">
+        <!-- Navigation -->
+        <nav>
+            <div class="container">
+                <div class="nav-brand">
+                    <img  style="border-radius: 50px; width: 40%;" src="./assets/kajmovic.jpg">
+                    <!--<h1 data-translate="navBrand">Mechanic Shop</h1>-->
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#about-us" data-translate="navAbout">About</a></li>
+                    <li><a href="#services" data-translate="navServices">Services</a></li>
+                    <li><a href="#contact" data-translate="navContact">Contact</a></li>
+                </ul>
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="bs">BS</button>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Poster Video -->
+        <section id="poster-video">
+            <video id="hero-video" autoplay muted loop>
+                <source src="https://videos.pexels.com/video-files/14514807/14514807-uhd_2560_1440_25fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay">
+                <h1 data-translate="heroTitle">Welcome to Mechanic Shop</h1>
+                <p data-translate="heroSubtitle">Your trusted car repair experts</p>
+            </div>
+        </section>
+
+        <!-- About Us -->
+        <section id="about-us">
+            <div class="container">
+                <h2 data-translate="aboutTitle">About Us</h2>
+                <p data-translate="aboutText">We are a family-owned car repair shop with over 20 years of experience. Our team of certified mechanics provides top-quality service for all your automotive needs.</p>
+                <img src="https://images.pexels.com/photos/4480505/pexels-photo-4480505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mechanic working in our repair shop" class="about-image" data-translate="aboutAlt">
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="services">
+            <div class="container">
+                <h2 data-translate="servicesTitle">Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="service-icon">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <h3 data-translate="engineTitle">Engine Repair</h3>
+                                <p data-translate="engineFront">Comprehensive engine diagnostics and repair services.</p>
+                            </div>
+                            <div class="card-back">
+                                <h3 data-translate="engineTitle">Engine Repair</h3>
+                                <p data-translate="engineBack">Our certified mechanics use state-of-the-art diagnostic equipment to identify and fix engine issues. From minor tune-ups to major overhauls, we ensure your engine runs smoothly and efficiently.</p>
+                                <ul data-translate-list="engineList">
+                                    <li>Diagnostic scanning</li>
+                                    <li>Timing belt replacement</li>
+                                    <li>Fuel system repair</li>
+                                    <li>Performance tuning</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="service-icon">
+                                    <i class="fas fa-brake-car"></i>
+                                </div>
+                                <h3 data-translate="brakeTitle">Brake Service</h3>
+                                <p data-translate="brakeFront">Safe and reliable brake inspections and replacements.</p>
+                            </div>
+                            <div class="card-back">
+                                <h3 data-translate="brakeTitle">Brake Service</h3>
+                                <p data-translate="brakeBack">Your safety is our priority. We provide complete brake system maintenance including pads, rotors, calipers, and brake fluid. All work comes with our satisfaction guarantee.</p>
+                                <ul data-translate-list="brakeList">
+                                    <li>Brake pad replacement</li>
+                                    <li>Rotor resurfacing</li>
+                                    <li>Brake fluid flush</li>
+                                    <li>ABS system repair</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="service-icon">
+                                    <i class="fas fa-oil-can"></i>
+                                </div>
+                                <h3 data-translate="oilTitle">Oil Change</h3>
+                                <p data-translate="oilFront">Quick and efficient oil changes with premium oils.</p>
+                            </div>
+                            <div class="card-back">
+                                <h3 data-translate="oilTitle">Oil Change</h3>
+                                <p data-translate="oilBack">Regular oil changes are essential for your vehicle's longevity. We use only premium synthetic oils and high-quality filters. Our quick service gets you back on the road fast.</p>
+                                <ul data-translate-list="oilList">
+                                    <li>Synthetic oil options</li>
+                                    <li>Filter replacement</li>
+                                    <li>Multi-point inspection</li>
+                                    <li>Fluid level check</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="service-icon">
+                                    <i class="fas fa-circle-notch"></i>
+                                </div>
+                                <h3 data-translate="tireTitle">Tire Service</h3>
+                                <p data-translate="tireFront">Tire rotations, alignments, and replacements.</p>
+                            </div>
+                            <div class="card-back">
+                                <h3 data-translate="tireTitle">Tire Service</h3>
+                                <p data-translate="tireBack">Proper tire maintenance ensures safety and performance. We offer complete tire services including mounting, balancing, rotations, and wheel alignments using precision equipment.</p>
+                                <ul data-translate-list="tireList">
+                                    <li>Tire rotation</li>
+                                    <li>Wheel alignment</li>
+                                    <li>Tire mounting/balancing</li>
+                                    <li>TPMS service</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="container">
+                <h2 data-translate="contactTitle">Contact Us</h2>
+                <div class="contact-content">
+                    <div class="contact-form-section">
+                        <h3 data-translate="contactGetInTouch">Get In Touch</h3>
+                        <form id="contact-form">
+                            <input type="text" placeholder="Name" required data-translate-placeholder="contactName">
+                            <input type="email" placeholder="Email" required data-translate-placeholder="contactEmail">
+                            <textarea placeholder="Message" required data-translate-placeholder="contactMessage"></textarea>
+                            <button type="submit" data-translate="contactSend">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-info-section">
+                        <div class="contact-info">
+                            <h3 data-translate="contactInfo">Contact Information</h3>
+                            <p data-translate="contactPhone">Phone: +38761235225</p>
+                            <p data-translate="contactEmailLabel">Email: </p>
+                            <p data-translate="contactAddress">Address: Kasindolska do 48, Ilidža 71210</p>
+                        </div>
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.1509788931603!2d18.31396648960029!3d43.831967366329216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475f4bccaf7ef1a3%3A0x8cf019a03a48cd0b!2sAutoKlinika%20Kajimovic!5e0!3m2!1sen!2sba!4v1776359117265!5m2!1sen!2sba"
+                                width="100%"
+                                height="300"
+                                style="border:0; border-radius: 10px;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../src/script.js"></script>
+    <script>
+        // Translations object
+        const translations = {
+            en: {
+                // Navigation
+                navBrand: "Mechanic Shop",
+                navAbout: "About",
+                navServices: "Services",
+                navContact: "Contact",
+                
+                // Loading
+                loading: "Loading...",
+                
+                // Hero section
+                heroTitle: "Welcome to Mechanic Shop",
+                heroSubtitle: "Your trusted car repair experts",
+                
+                // About section
+                aboutTitle: "About Us",
+                aboutText: "We are a family-owned car repair shop with over 20 years of experience. Our team of certified mechanics provides top-quality service for all your automotive needs.",
+                aboutAlt: "Mechanic working in our repair shop",
+                
+                // Services section
+                servicesTitle: "Our Services",
+                
+                // Engine Repair
+                engineTitle: "Engine Repair",
+                engineFront: "Comprehensive engine diagnostics and repair services.",
+                engineBack: "Our certified mechanics use state-of-the-art diagnostic equipment to identify and fix engine issues. From minor tune-ups to major overhauls, we ensure your engine runs smoothly and efficiently.",
+                engineList: ["Diagnostic scanning", "Timing belt replacement", "Fuel system repair", "Performance tuning"],
+                
+                // Brake Service
+                brakeTitle: "Brake Service",
+                brakeFront: "Safe and reliable brake inspections and replacements.",
+                brakeBack: "Your safety is our priority. We provide complete brake system maintenance including pads, rotors, calipers, and brake fluid. All work comes with our satisfaction guarantee.",
+                brakeList: ["Brake pad replacement", "Rotor resurfacing", "Brake fluid flush", "ABS system repair"],
+                
+                // Oil Change
+                oilTitle: "Oil Change",
+                oilFront: "Quick and efficient oil changes with premium oils.",
+                oilBack: "Regular oil changes are essential for your vehicle's longevity. We use only premium synthetic oils and high-quality filters. Our quick service gets you back on the road fast.",
+                oilList: ["Synthetic oil options", "Filter replacement", "Multi-point inspection", "Fluid level check"],
+                
+                // Tire Service
+                tireTitle: "Tire Service",
+                tireFront: "Tire rotations, alignments, and replacements.",
+                tireBack: "Proper tire maintenance ensures safety and performance. We offer complete tire services including mounting, balancing, rotations, and wheel alignments using precision equipment.",
+                tireList: ["Tire rotation", "Wheel alignment", "Tire mounting/balancing", "TPMS service"],
+                
+                // Contact section
+                contactTitle: "Contact Us",
+                contactGetInTouch: "Get In Touch",
+                contactInfo: "Contact Information",
+                contactName: "Name",
+                contactEmail: "Email",
+                contactMessage: "Message",
+                contactSend: "Send Message",
+                contactPhone: "Phone: +38761235225",
+                contactEmailLabel: "Email: ",
+                contactAddress: "Address: Kasindolska do 48, Ilidža 71210",
+                
+                // Form success message
+                formSuccess: "Thank you for your message! We will get back to you soon."
+            },
+            bs: {
+                // Navigation
+                navBrand: "Auto Servis",
+                navAbout: "O nama",
+                navServices: "Usluge",
+                navContact: "Kontakt",
+                
+                // Loading
+                loading: "Učitavanje...",
+                
+                // Hero section
+                heroTitle: "Dobrodošli u Auto Servis",
+                heroSubtitle: "Vaši pouzdani stručnjaci za popravku automobila",
+                
+                // About section
+                aboutTitle: "O nama",
+                aboutText: "Mi smo porodični auto servis sa preko 20 godina iskustva. Naš tim sertifikovanih mehaničara pruža vrhunsku uslugu za sve vaše automobile potrebe.",
+                aboutAlt: "Mehaničar radi u našem servisu",
+                
+                // Services section
+                servicesTitle: "Naše usluge",
+                
+                // Engine Repair
+                engineTitle: "Popravka motora",
+                engineFront: "Sveobuhvatna dijagnostika i popravka motora.",
+                engineBack: "Naši sertifikovani mehaničari koriste najsavremeniju dijagnostičku opremu za identifikaciju i rješavanje problema sa motorom. Od manjih podešavanja do velikih remontovanja, osiguravamo da vaš motor radi glatko i efikasno.",
+                engineList: ["Dijagnostičko skeniranje", "Zamjena remena", "Popravka sistema goriva", "Podešavanje performansi"],
+                
+                // Brake Service
+                brakeTitle: "Servis kočnica",
+                brakeFront: "Sigurne i pouzdane inspekcije i zamjene kočnica.",
+                brakeBack: "Vaša sigurnost je naš prioritet. Pružamo kompletnu održavanje sistema kočnica uključujući pločice, diskove, čeljusti i kočnu tečnost. Sav posao dolazi sa našom garancijom zadovoljstva.",
+                brakeList: ["Zamjena kočnih pločica", "Obrada diskova", "Ispiranje kočne tečnosti", "Popravka ABS sistema"],
+                
+                // Oil Change
+                oilTitle: "Zamjena ulja",
+                oilFront: "Brze i efikasne zamjene ulja sa premium uljima.",
+                oilBack: "Redovne zamjene ulja su neophodne za dugovječnost vašeg vozila. Koristimo samo premium sintetička ulja i visokokvalitetne filtere. Naša brza usluga vraća vas na put brzo.",
+                oilList: ["Opcije sintetičkog ulja", "Zamjena filtera", "Više tačaka inspekcije", "Provjera nivoa tečnosti"],
+                
+                // Tire Service
+                tireTitle: "Servis guma",
+                tireFront: "Rotacija guma, poravnanje i zamjene.",
+                tireBack: "Pravilno održavanje guma osigurava sigurnost i performanse. Nudimo kompletnu uslugu guma uključujući montažu, balansiranje, rotaciju i poravnanje točkova koristeći preciznu opremu.",
+                tireList: ["Rotacija guma", "Poravnanje točkova", "Montaža/balansiranje guma", "TPMS servis"],
+                
+                // Contact section
+                contactTitle: "Kontaktirajte nas",
+                contactGetInTouch: "Stupite u kontakt",
+                contactInfo: "Kontakt informacije",
+                contactName: "Ime",
+                contactEmail: "Email",
+                contactMessage: "Poruka",
+                contactSend: "Pošalji poruku",
+                contactPhone: "Telefon: +38761235225",
+                contactEmailLabel: "Email: ",
+                contactAddress: "Adresa: Kasindolska do 48, Ilidža 71210",
+                
+                // Form success message
+                formSuccess: "Hvala vam na poruci! Javit ćemo vam se uskoro."
+            }
+        };
+    </script>
+</body>
+</html>
